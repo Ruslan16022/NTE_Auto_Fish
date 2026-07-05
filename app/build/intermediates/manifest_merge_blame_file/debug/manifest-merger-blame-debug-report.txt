@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.fishautoclicker"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:5:5-77
+11-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:5:22-74
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+12-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:6:5-94
+12-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:6:22-91
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:7:5-78
+13-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:7:22-75
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:8:5-81
+14-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+15-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:9:5-72
+15-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:9:22-69
+16
+17    <permission
+17-->[androidx.core:core:1.9.0] C:\Users\姚志\.gradle\caches\transforms-3\75919e89ab9acfe92b320b18b5eba894\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.fishautoclicker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.9.0] C:\Users\姚志\.gradle\caches\transforms-3\75919e89ab9acfe92b320b18b5eba894\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.9.0] C:\Users\姚志\.gradle\caches\transforms-3\75919e89ab9acfe92b320b18b5eba894\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.fishautoclicker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.9.0] C:\Users\姚志\.gradle\caches\transforms-3\75919e89ab9acfe92b320b18b5eba894\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.9.0] C:\Users\姚志\.gradle\caches\transforms-3\75919e89ab9acfe92b320b18b5eba894\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:11:5-47:19
+24        android:allowBackup="true"
+24-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:12:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.9.0] C:\Users\姚志\.gradle\caches\transforms-3\75919e89ab9acfe92b320b18b5eba894\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+26        android:dataExtractionRules="@xml/data_extraction_rules"
+26-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:13:9-65
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:fullBackupContent="@xml/backup_rules"
+29-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:14:9-54
+30        android:label="@string/app_name"
+30-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:15:9-41
+31        android:supportsRtl="true"
+31-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:16:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.FishAutoClicker" >
+33-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:17:9-53
+34        <service
+34-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:20:9-31:19
+35            android:name="com.example.fishautoclicker.FishAccessibilityService"
+35-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:21:13-53
+36            android:enabled="true"
+36-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:22:13-35
+37            android:exported="true"
+37-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:23:13-36
+38            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+38-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:24:13-79
+39            <intent-filter>
+39-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:25:13-27:29
+40                <action android:name="android.accessibilityservice.AccessibilityService" />
+40-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:26:17-92
+40-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:26:25-89
+41            </intent-filter>
+42
+43            <meta-data
+43-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:28:13-30:72
+44                android:name="android.accessibilityservice"
+44-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:29:17-60
+45                android:resource="@xml/accessibility_service_config" />
+45-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:30:17-69
+46        </service>
+47        <service
+47-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:33:9-37:63
+48            android:name="com.example.fishautoclicker.MediaProjectionForegroundService"
+48-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:34:13-61
+49            android:enabled="true"
+49-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:35:13-35
+50            android:exported="false"
+50-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:36:13-37
+51            android:foregroundServiceType="mediaProjection" />
+51-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:37:13-60
+52
+53        <activity
+53-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:39:9-46:20
+54            android:name="com.example.fishautoclicker.MainActivity"
+54-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:40:13-41
+55            android:exported="true" >
+55-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:41:13-36
+56            <intent-filter>
+56-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:42:13-45:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:43:17-69
+57-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:43:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:44:17-77
+59-->E:\code\AUTOnte\autonte\app\src\main\AndroidManifest.xml:44:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <provider
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\姚志\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+64            android:name="androidx.startup.InitializationProvider"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\姚志\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+65            android:authorities="com.example.fishautoclicker.androidx-startup"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\姚志\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+66            android:exported="false" >
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\姚志\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+67            <meta-data
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\姚志\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\姚志\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+69                android:value="androidx.startup" />
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\姚志\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+70            <meta-data
+70-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\姚志\.gradle\caches\transforms-3\985a628a1f5b5ddc7202e86f547851a5\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+71-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\姚志\.gradle\caches\transforms-3\985a628a1f5b5ddc7202e86f547851a5\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+72                android:value="androidx.startup" />
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\姚志\.gradle\caches\transforms-3\985a628a1f5b5ddc7202e86f547851a5\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+73        </provider>
+74    </application>
+75
+76</manifest>

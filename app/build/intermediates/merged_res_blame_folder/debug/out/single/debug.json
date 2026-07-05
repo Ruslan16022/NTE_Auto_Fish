@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\drawable_floating_bg.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\drawable\\floating_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\layout_floating_window.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\layout\\floating_window.xml"
+    },
+    {
+        "merged": "com.example.fishautoclicker.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "com.example.fishautoclicker.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\layout_floating_control.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\layout\\floating_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\layout_activity_calibration.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\layout\\activity_calibration.xml"
+    },
+    {
+        "merged": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-merged_res-28:\\xml_accessibility_service_config.xml.flat",
+        "source": "C:\\Users\\姚志\\.gradle\\daemon\\8.5\\com.example.fishautoclicker.app-main-30:\\xml\\accessibility_service_config.xml"
+    }
+]

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CC000000"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/floatTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Fish"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="4dp"/>
+
+    <Button
+        android:id="@+id/floatStartBtn"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:text="Start"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:background="#4CAF50"
+        android:layout_marginBottom="4dp"/>
+
+    <Button
+        android:id="@+id/floatStopBtn"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:text="Stop"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:background="#F44336"/>
+
+</LinearLayout>

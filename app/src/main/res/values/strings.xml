@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fish Auto Clicker</string>
+    <string name="accessibility_description">Auto fishing assistant service for game screen recognition and simulated clicks</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="interval_label">Screen Capture Interval(ms):</string>
+    <string name="enable_accessibility">Enable Accessibility Service</string>
+    <string name="accessibility_title">Accessibility Settings</string>
+    <string name="status_running">Running...</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="casting_delay_label">Casting Delay(ms):</string>
+    <string name="click_cooldown_label">Click Cooldown(ms):</string>
+</resources>

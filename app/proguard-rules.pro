@@ -1,0 +1,2 @@
+-keepattributes *Annotation*
+-keep public class com.example.fishautoclicker.FishAccessibilityService

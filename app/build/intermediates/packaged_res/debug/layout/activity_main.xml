@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fish Auto Clicker"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stopped"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Required Permission"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/enableAccessibilityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Accessibility Service"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#22FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable debug drawing (overlays)"
+                    android:textSize="14sp"
+                    android:textColor="#CCCCCC"/>
+
+                <Switch
+                    android:id="@+id/drawingSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Screen Capture Interval(ms)"
+                    android:textSize="14sp"
+                    android:textColor="#CCCCCC"/>
+
+                <EditText
+                    android:id="@+id/intervalEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="80"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Long Press Duration(ms)"
+                    android:textSize="14sp"
+                    android:textColor="#CCCCCC"/>
+
+                <EditText
+                    android:id="@+id/longPressDurationEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="5000"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Coordinate Configuration -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#22FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Coordinate Config (% of screen)"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFEB3B"/>
+
+                <TextView
+                    android:id="@+id/screenSizeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="?"
+                    android:textSize="12sp"
+                    android:textColor="#FFEB3B"/>
+            </LinearLayout>
+
+            <!-- CAST -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAST (throw hook) button:"
+                android:textSize="13sp"
+                android:textColor="#FF5722"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView android:layout_width="30dp" android:layout_height="wrap_content"
+                    android:text="X%" android:textSize="13sp" android:textColor="#CCCCCC"/>
+                <EditText android:id="@+id/castXEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="85" android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"
+                    android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="30dp" android:layout_height="wrap_content"
+                    android:text="Y%" android:textSize="13sp" android:textColor="#CCCCCC"/>
+                <EditText android:id="@+id/castYEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="88" android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"/>
+            </LinearLayout>
+
+            <!-- LEFT -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LEFT (move cursor left) button:"
+                android:textSize="13sp"
+                android:textColor="#4FC3F7"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView android:layout_width="30dp" android:layout_height="wrap_content"
+                    android:text="X%" android:textSize="13sp" android:textColor="#CCCCCC"/>
+                <EditText android:id="@+id/leftXEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="15" android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"
+                    android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="30dp" android:layout_height="wrap_content"
+                    android:text="Y%" android:textSize="13sp" android:textColor="#CCCCCC"/>
+                <EditText android:id="@+id/leftYEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="72" android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"/>
+            </LinearLayout>
+
+            <!-- RIGHT -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RIGHT (move cursor right) button:"
+                android:textSize="13sp"
+                android:textColor="#4FC3F7"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView android:layout_width="30dp" android:layout_height="wrap_content"
+                    android:text="X%" android:textSize="13sp" android:textColor="#CCCCCC"/>
+                <EditText android:id="@+id/rightXEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="85" android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"
+                    android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="30dp" android:layout_height="wrap_content"
+                    android:text="Y%" android:textSize="13sp" android:textColor="#CCCCCC"/>
+                <EditText android:id="@+id/rightYEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="72" android:textSize="13sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"/>
+            </LinearLayout>
+
+            <!-- SCAN -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SCAN region (progress bar): L T R B %"
+                android:textSize="13sp"
+                android:textColor="#66BB6A"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText android:id="@+id/scanLEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="30" android:textSize="12sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"
+                    android:layout_marginEnd="4dp"/>
+                <EditText android:id="@+id/scanTEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="4" android:textSize="12sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"
+                    android:layout_marginEnd="4dp"/>
+                <EditText android:id="@+id/scanREdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="70" android:textSize="12sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"
+                    android:layout_marginEnd="4dp"/>
+                <EditText android:id="@+id/scanBEdit" android:layout_width="0dp"
+                    android:layout_height="36dp" android:layout_weight="1"
+                    android:text="12" android:textSize="12sp" android:textColor="#FFFFFF"
+                    android:background="#33FFFFFF" android:gravity="center"
+                    android:inputType="numberDecimal" android:padding="2dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Enable Accessibility &amp; Overlay permissions\n2. Tap Start to authorize screen capture\n3. Switch to game, tap floating Start"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Start"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Stop"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</ScrollView>
